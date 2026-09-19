@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Student Result Management System</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #eef2f7;
+}
+
+header {
+    background: #172b4d;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.box {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ccc;
+}
+
+h2 {
+    color: #172b4d;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    margin: 7px 0 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+button {
+    background: #172b4d;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .85;
+}
+
+.delete {
+    background: #c62828;
+}
+
+.logout {
+    display: inline-block;
+    background: #555;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.message {
+    background: #ffe0e0;
+    color: #b00000;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background: #172b4d;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.subject {
+    background: #f4f6f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+@media(max-width:700px) {
+
+    table {
+        font-size: 11px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Student Result Management System</h1>
+
+</header>
+
+<div class="container">
+
+
+
+<div class="box">
+
+<h2>Student Login</h2>
+
+<form action="http://127.0.0.1:5000/student_login" method="POST">
+
+<input type="text" name="student_id" placeholder="Student ID" required="">
+
+<input type="password" name="password" placeholder="Password" required="">
+
+<button type="submit">
+Student Login
+</button>
+
+</form>
+
+</div>
+
+
+<div class="box">
+
+<h2>Admin Login</h2>
+
+<form action="http://127.0.0.1:5000/admin_login" method="POST">
+
+<input type="text" name="admin_id" placeholder="Admin ID" required="">
+
+<input type="password" name="password" placeholder="Password" required="">
+
+<button type="submit">
+Admin Login
+</button>
+
+</form>
+
+</div>
+
+
+
+</div>
+
+
+
+
+</body></html>
